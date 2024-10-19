@@ -1,0 +1,83 @@
+/* LoginPage.css */
+
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
+  .login-content {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the login form box */
+  .login-box {
+    width: 300px;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #6200ee;
+  }
+  
+  .submit-btn {
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3700b3;
+  }
+  
+  .toggle-link {
+    color: #6200ee;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .toggle-link:hover {
+    color: #3700b3;
+  }
+  
+  /* Container for the image */
+  .image-container {
+    margin-right: 20px;
+  }
+  
+  .quiz-image {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  

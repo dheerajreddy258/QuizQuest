@@ -1,0 +1,117 @@
+/* Basic styling for the container */
+.body{
+    align-content:left ;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9fafb; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input field styling */
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Styling for each question box */
+  .question-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  }
+  
+  /* Styling for buttons */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Add question and option buttons */
+  button.bg-blue-500 {
+    background-color: #3490dc; /* Blue color */
+    color: white;
+  }
+  
+  button.bg-blue-500:hover {
+    background-color: #2779bd; /* Darker blue on hover */
+  }
+  
+  button.bg-green-500 {
+    background-color: #38c172; /* Green color */
+    color: white;
+  }
+  
+  button.bg-green-500:hover {
+    background-color: #2d995b; /* Darker green on hover */
+  }
+  
+  /* Remove buttons */
+  button.bg-red-500 {
+    background-color: #e3342f; /* Red color */
+    color: white;
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #cc1f1a; /* Darker red on hover */
+  }
+  
+  /* Success alert styling */
+  .alert-success {
+    padding: 15px;
+    background-color: #d4edda; /* Light green background */
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    color: #155724;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  /* Flexbox for input and button alignment */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-grow {
+    flex-grow: 1;
+  }
+  
+  .mr-2 {
+    margin-right: 10px;
+  }
+  
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+  
+  .mt-2 {
+    margin-top: 10px;
+  }
+  

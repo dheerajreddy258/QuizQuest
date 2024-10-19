@@ -1,0 +1,158 @@
+.quiz-taker-home-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-taker-home {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 80px; /* Adding space to account for sticky navbar */
+  width: 100%;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+  text-align: center;
+  
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.welcome-banner p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Available Quizzes */
+.available-quizzes, .completed-quizzes {
+  margin-bottom: 30px;
+}
+
+.available-quizzes h2, .completed-quizzes h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+.quiz-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.quiz-card p {
+  color: #555;
+  margin-top: 10px;
+}
+
+.start-quiz-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.start-quiz-btn:hover {
+  background-color: #218838;
+}
+
+.completed .quiz-card {
+  background-color: #f8f9fa;
+}
+
+.completed .quiz-card h3 {
+  color: #6c757d;
+}
+
+.completed .quiz-card p {
+  color: #6c757d;
+}
+
+/* Navbar Sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.welcome-message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.logout-button button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button button:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz-card {
+    max-width: 100%;
+  }
+
+  .welcome-banner h1 {
+    font-size: 24px;
+  }
+
+  .welcome-banner p {
+    font-size: 16px;
+  }
+}
