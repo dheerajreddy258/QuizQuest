@@ -752,7 +752,9 @@ function LoginPage() {
         setError('Registration failed. Please try again.');
       }
     } else {
+      
       try {
+        
         const loginData = { email, password };
         const res = await axios.post('http://localhost:5000/api/auth/login', loginData);
 
@@ -859,7 +861,7 @@ function LoginPage() {
             <div className="form-buttons">
               {isRegister ? (
                 <div>
-                  <button type="submit" className="submit-btn">Register</button>
+                  <button type="submit" className="submit-btn">Register & Login</button>
                   <p>Already have an account? <span onClick={handleLogin} className="toggle-link">Login</span></p>
                 </div>
               ) : (
