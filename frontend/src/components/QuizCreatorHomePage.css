@@ -1,7 +1,7 @@
 /* Navbar Styles */
 
 .navbar-mainbg {
-    background-color: #5161ce;
+    background-color: #ffffff;
     width: 100vw;                   /* Ensure full width of the viewport */
     padding: 10px 20px;             /* Maintain consistent padding */
     display: flex;

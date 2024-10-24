@@ -1,117 +1,162 @@
-/* Basic styling for the container */
-.body{
-    align-content:left ;
+/* General Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
 }
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9fafb; /* Light gray background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* Adjusts spacing between elements */
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* For larger screens, divide into 3 columns */
+    gap: 2rem; /* Larger gap on wider screens */
   }
-  
-  /* Heading styling */
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Input field styling */
-  input[type="text"], select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  /* Styling for each question box */
-  .question-box {
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  }
-  
-  /* Styling for buttons */
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-  
-  /* Add question and option buttons */
-  button.bg-blue-500 {
-    background-color: #3490dc; /* Blue color */
-    color: white;
-  }
-  
-  button.bg-blue-500:hover {
-    background-color: #2779bd; /* Darker blue on hover */
-  }
-  
-  button.bg-green-500 {
-    background-color: #38c172; /* Green color */
-    color: white;
-  }
-  
-  button.bg-green-500:hover {
-    background-color: #2d995b; /* Darker green on hover */
-  }
-  
-  /* Remove buttons */
-  button.bg-red-500 {
-    background-color: #e3342f; /* Red color */
-    color: white;
-  }
-  
-  button.bg-red-500:hover {
-    background-color: #cc1f1a; /* Darker red on hover */
-  }
-  
-  /* Success alert styling */
-  .alert-success {
-    padding: 15px;
-    background-color: #d4edda; /* Light green background */
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    color: #155724;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-  
-  /* Flexbox for input and button alignment */
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  .flex-grow {
-    flex-grow: 1;
-  }
-  
-  .mr-2 {
-    margin-right: 10px;
-  }
-  
-  .mb-4 {
-    margin-bottom: 20px;
-  }
-  
-  .mt-2 {
-    margin-top: 10px;
-  }
-  
+}
+
+/* Form Styling */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.border {
+  border: 1px solid #d1d5db;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.bg-green-600 {
+  background-color: #16a34a;
+}
+
+.bg-red-600 {
+  background-color: #dc2626;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-green-800 {
+  color: #065f46;
+}
+
+.bg-green-100 {
+  background-color: #d1fae5;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+/* For question generation section */
+.h-40 {
+  height: 10rem;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
