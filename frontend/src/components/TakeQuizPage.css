@@ -1,0 +1,80 @@
+.take-quiz-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .take-quiz-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-questions {
+    padding: 20px;
+  }
+  
+  .question-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .question-card h2 {
+    margin-top: 0;
+  }
+  
+  .option {
+    margin-bottom: 10px;
+  }
+  
+  .option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .option span {
+    font-size: 16px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive design */
+  
+  @media (max-width: 768px) {
+    .take-quiz-page {
+      margin: 20px auto;
+    }
+    .question-card {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .take-quiz-page {
+      padding: 10px;
+    }
+    .question-card {
+      padding: 5px;
+    }
+  }

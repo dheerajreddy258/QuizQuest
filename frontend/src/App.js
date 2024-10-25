@@ -29,6 +29,7 @@ import LoginPage from './components/LoginPage';
 import QuizCreatorHomePage from './components/QuizCreatorHomePage';
 import QuizTakerHomePage from './components/QuizTakerHomePage';
 import CreateQuiz from './components/CreateQuiz';
+import TakeQuizPage from './components/TakeQuizPage';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/creator-home" element={<QuizCreatorHomePage />} />
         <Route path="/taker-home" element={<QuizTakerHomePage />} />
         <Route path="/create-quiz" element={<CreateQuiz />} />
+        <Route path="/take-quiz/:_id" element={<TakeQuizPage />} />
       </Routes>
     </Router>
   );
